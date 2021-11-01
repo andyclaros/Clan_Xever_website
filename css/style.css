@@ -1,0 +1,1218 @@
+
+body {
+    background-color: white;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#menu_nav {
+    display: flex;
+    height: 5em;
+    width: 100%;
+    font-size: 1.3em;
+    background: #3d3d3d;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#logo{
+    width: 130px;
+    height: 130px;
+    margin-top: -0.3em;
+    margin-left: 5%;
+}
+
+#menu_nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 1%;
+}
+
+#menu_nav ul li{
+    margin: 0 1em;
+    color: orange;
+}
+
+#menu_nav ul li a {
+    color: #f2f2f2;
+    padding: 8px 15px;
+    border-radius: 0.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#menu_nav ul li a:link {
+    color: white;
+}
+
+#menu_nav ul li a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#menu_nav ul li a:hover{
+    color: #111;
+    background: rgb(255, 255, 255);
+}
+
+#menu_nav ul li a:active{
+  color: #111;
+  background: rgb(255, 255, 255);
+}
+
+.fondo_inicio {
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/fondo_4.jpg);
+    width: 100%;
+}
+
+.banner_inicio {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    right: 10%;
+    padding: 1em;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(116, 114, 218, 0.4);
+    color: #fff;
+    margin: auto;
+    border-radius: 3em;
+}
+
+.banner_inicio h1{
+    font-size: 4em;
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+.banner_inicio p{
+    font-size: 1.5em;
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+.intro{
+    background-color: #7472DA;
+    margin: 0px;
+    padding: 2% 5% 0%;
+}
+
+.intro_cont{
+    color: white;
+    padding: 1em 10% 5em;
+}
+
+.intro h1{
+    font-size: 2.5em;
+}
+
+.intro p{
+    font-size: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noticia{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido_box {
+    flex: 40%;
+}
+
+.contenido {
+    padding: 2em;
+}
+
+.contenido h1 {
+    color: #7472DA;
+    font-size: 2em;
+}
+
+.contenido p {
+    padding: 2em;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.xever_ds {
+    flex: 60%;
+}
+
+#titulo_jugadores {
+    color: white;
+    font-size: 3em;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+#intro_jugadores {
+    color: white;
+    font-size: 1.2em;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    padding: 1% 10% 0%;
+}
+
+.video {
+    padding: 3em 3em 3em 5em;
+}
+
+.tarjeta {
+    background-color: rgba(230, 230, 230, 0.6);
+    margin-bottom: 2em;
+    width: 30%;
+    border-radius: 2em;
+}
+
+.tarjeta a{
+    text-decoration: none;
+}
+
+.tarjeta-content {
+    padding: 2em;
+}
+
+.tarjeta-content h2 {
+    margin-top: -1em;
+    margin-bottom: 0em;
+    font-weight: normal;
+    color: #7472DA;
+    text-align: center;
+}
+
+.tarjeta-content p {
+    font-size: 95%;
+}
+
+.thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+}
+
+.thumbnail .esquinas {
+    border-radius: 30px;
+}
+
+img {
+    display: block;
+    border: 0;  
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+}
+
+.perfiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 7%;
+}
+
+#fondo_animado {
+    background: linear-gradient(-45deg, #DD8343, #7472DA, white);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+footer {
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 2em;
+    padding-left: 4em;
+}
+
+#pie .fa {
+    padding: 1em;
+    font-size: 1em;
+    width: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin: 1em 1em;
+    border-radius: 50%;
+}
+
+#pie_form .fa {
+    padding: 1em;
+    font-size: 1em;
+    width: 3em;
+    text-align: center;
+    text-decoration: none;
+    margin: 1em 1em;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    font-size: 2em;
+}
+
+.fa-twitch {
+    background: #6441a5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #515BD4 ;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.pie_2 {
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: -3% 5% 0% 75%;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 600px){
+
+    body {
+        background-color: white;
+        margin: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        height: 100vh;
+    }
+
+    h1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+
+    #menu_nav {
+        display: block;
+        height: 10em;
+        width: 100%;
+        font-size: 1.3em;
+        background: #3d3d3d;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #logo{
+        width: 180px;
+        height: 180px;
+        margin-top: -0.3em;
+        margin-left: 39%;
+    }
+
+    #menu_nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-right: 1%;
+        justify-content: center;
+        margin-top: -1em;
+    }
+
+    #menu_nav ul li{
+        margin: 0 1em;
+    }
+
+    #menu_nav ul li a {
+        color: #f2f2f2;
+        padding: 8px 15px;
+        border-radius: 0.5em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    #menu_nav ul li a:link {
+        color: blue;
+    }
+
+    #menu_nav ul li a:visited {
+        color: rgb(255, 255, 255);
+    }
+
+    #menu_nav ul li a:hover{
+        color: #111;
+        background: rgb(255, 255, 255);
+    }
+
+    #menu_nav ul li a:active{
+    color: #111;
+    background: rgb(255, 255, 255);
+    }
+
+    .fondo_inicio {
+        height: 80vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/fondo_4.jpg);
+        width: 100%;
+    }
+
+    .banner_inicio {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        right: 10%;
+        padding: 1em;
+        width: 80%;
+        text-align: center;
+        background-color: rgba(116, 114, 218, 0.4);
+        color: #fff;
+        margin: auto;
+        border-radius: 3em;
+    }
+
+    .banner_inicio h1{
+        font-size: 4em;
+        color: white;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+
+    .banner_inicio p{
+        font-size: 1.5em;
+        color: white;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+
+    .intro{
+        background-color: #7472DA;
+        margin: 0px;
+        padding: 2% 5% 0%;
+    }
+
+    .intro_cont{
+        color: white;
+        padding: 1em 10% 5em;
+    }
+
+    .intro h1{
+        font-size: 2.5em;
+    }
+
+    .intro p{
+        font-size: 1.3em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .noticia{
+        background-color: white;
+        display: block;
+    }
+
+    .contenido {
+        padding: 2em;
+    }
+
+    .contenido h1 {
+        color: #7472DA;
+        font-size: 2em;
+    }
+
+    .contenido p {
+        padding: 2em;
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+
+    .xever_ds {
+        display: block;
+        margin: -10% 0% 0% 0%;
+        width: 100%;
+    }
+
+    #titulo_jugadores {
+        color: white;
+        font-size: 3em;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+
+    #intro_jugadores {
+        color: white;
+        font-size: 1.2em;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+        padding: 1% 10% 0%;
+    }
+
+    .video {
+        padding: 3em 3em 3em 5em;
+    }
+
+    .tarjeta {
+        background-color: rgba(230, 230, 230, 0.6);
+        margin-bottom: 2em;
+        width: 45%;
+        border-radius: 2em;
+    }
+
+    .tarjeta a{
+        text-decoration: none;
+    }
+
+    .tarjeta-content {
+        padding: 2em;
+    }
+
+    .tarjeta-content h2 {
+        margin-top: -1em;
+        margin-bottom: 0em;
+        font-weight: normal;
+        color: #7472DA;
+        text-align: center;
+    }
+
+    .tarjeta-content p {
+        font-size: 95%;
+    }
+
+    .thumbnail {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position: relative;
+    }
+
+    .thumbnail .esquinas {
+        border-radius: 30px;
+    }
+
+    img {
+        display: block;
+        border: 0;  
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .perfiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        padding: 7%;
+    }
+
+    #fondo_animado {
+        background: linear-gradient(-45deg, #DD8343, #7472DA, white);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    footer {
+        margin-top: auto;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 5% 5% 5% 10%;
+        justify-content: center;
+    }
+
+    #pie .fa {
+        padding: 1em;
+        font-size: 1.5em;
+        width: 1em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1em 1em;
+        border-radius: 50%;
+    }
+
+    #pie_form .fa {
+        padding: 1em;
+        font-size: 1.5em;
+        width: 3em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1em 1em;
+        border-radius: 50%;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitch {
+        background: #6441a5;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #515BD4 ;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .pie_2 {
+        margin-top: auto;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        margin: 5% 20% 0% 25%;
+    }
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 360px){
+
+    body {
+        background-color: white;
+        margin: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        height: 100vh;
+    }
+
+    h1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+
+    #menu_nav {
+        display: block;
+        height: 16em;
+        width: 100%;
+        font-size: 1.3em;
+        background: #3d3d3d;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+
+    #logo{
+        display: block;
+        width: 180px;
+        height: 180px;
+        margin-top: -0.3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu_nav ul{
+        display: block;
+        list-style: none;
+        margin-top: -1em;
+        justify-content: center;
+
+    }
+
+    #menu_nav ul li{
+        margin: 1em 1em;
+        margin-left: -0.5em;
+    }
+
+    #menu_nav ul li a {
+        color: #f2f2f2;
+        padding: 8px 15px;
+        border-radius: 0.5em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    #menu_nav ul li a:link {
+        color: blue;
+    }
+
+    #menu_nav ul li a:visited {
+        color: rgb(255, 255, 255);
+    }
+
+    #menu_nav ul li a:hover{
+        color: #111;
+        background: rgb(255, 255, 255);
+    }
+
+    #menu_nav ul li a:active{
+    color: #111;
+    background: rgb(255, 255, 255);
+    }
+
+    .fondo_inicio {
+        height: 70vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/fondo_4.jpg);
+        width: 100%;
+    }
+
+    .banner_inicio {
+        position: absolute;
+        left: 10%;
+        top: 60%;
+        right: 10%;
+        padding: 1em;
+        width: 70%;
+        text-align: center;
+        background-color: rgba(116, 114, 218, 0.4);
+        color: #fff;
+        margin: auto;
+        border-radius: 3em;
+    }
+
+    .banner_inicio h1{
+        font-size: 10vw;
+        color: white;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+
+    .banner_inicio p{
+        font-size: 3vw;
+        color: white;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+
+    .intro{
+        background-color: #7472DA;
+        margin: 0px;
+        padding: 2% 5% 0%;
+    }
+
+    .intro_cont{
+        color: white;
+        padding: 0em 5% 1em;
+    }
+
+    .intro h1{
+        font-size: 2em;
+    }
+
+    .intro p{
+        font-size: 1.1em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .noticia{
+        background-color: white;
+        display: block;
+    }
+
+    .contenido {
+        padding: 2em;
+    }
+
+    .contenido h1 {
+        color: #7472DA;
+        font-size: 1.8em;
+    }
+
+    .contenido p {
+        padding: 2em;
+        font-size: 1.05em;
+        font-weight: 300;
+    }
+
+    .xever_ds {
+        display: block;
+        margin: -10% 0% 0% 0%;
+        width: 100%;
+        height: 50%;
+    }
+
+    #titulo_jugadores {
+        color: white;
+        font-size: 3em;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+
+    #intro_jugadores {
+        color: white;
+        font-size: 1.2em;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+        padding: 1% 10% 0%;
+    }
+
+    .video {
+        padding: 3em 3em 3em 5em;
+    }
+
+    .tarjeta {
+        background-color: rgba(230, 230, 230, 0.6);
+        margin-bottom: 2em;
+        width: 90%;
+        border-radius: 2em;
+    }
+
+    .tarjeta a{
+        text-decoration: none;
+    }
+
+    .tarjeta-content {
+        padding: 2em;
+    }
+
+    .tarjeta-content h2 {
+        margin-top: -1em;
+        margin-bottom: 0em;
+        font-weight: normal;
+        color: #7472DA;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .tarjeta-content p {
+        font-size: 95%;
+        text-align: center;
+    }
+
+    .thumbnail {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position: relative;
+    }
+
+    .thumbnail .esquinas {
+        border-radius: 30px;
+    }
+
+    img {
+        display: block;
+        border: 0;  
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .perfiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        padding: 7%;
+    }
+
+    #fondo_animado {
+        background: linear-gradient(-45deg, #DD8343, #7472DA, white);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    footer {
+        margin-top: auto;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 5% 5% 5% 5%;
+        justify-content: center;
+    }
+
+    #pie .fa {
+        padding: 1em;
+        font-size: 4vw;
+        width: 1em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1em 1em;
+        border-radius: 50%;
+    }
+
+    #pie_form .fa {
+        padding: 1em;
+        font-size: 4vw;
+        width: 3em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1em 1em;
+        border-radius: 50%;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        font-size: 2em;
+    }
+
+    .fa-twitch {
+        background: #6441a5;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #515BD4 ;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .pie_2 {
+        margin-top: auto;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        margin: 5% 20% 0% 25%;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+    
+    body {
+        background-color: white;
+        margin: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        height: 100vh;
+    }
+    
+    h1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    #menu_nav {
+        display: block;
+        height: 16em;
+        width: 100%;
+        font-size: 1.3em;
+        background: #3d3d3d;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    #logo{
+        display: block;
+        width: 180px;
+        height: 180px;
+        margin-top: -0.3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #menu_nav ul{
+        display: block;
+        list-style: none;
+        margin-top: -1em;
+        justify-content: center;
+    }
+    
+    #menu_nav ul li{
+        margin: 1em 1em;
+        margin-left: -0.5em;
+    }
+    
+    #menu_nav ul li a {
+        color: #f2f2f2;
+        padding: 8px 15px;
+        border-radius: 0.5em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    #menu_nav ul li a:link {
+        color: blue;
+    }
+    
+    #menu_nav ul li a:visited {
+        color: rgb(255, 255, 255);
+    }
+    
+    #menu_nav ul li a:hover{
+        color: #111;
+        background: rgb(255, 255, 255);
+    }
+    
+    #menu_nav ul li a:active{
+      color: #111;
+      background: rgb(255, 255, 255);
+    }
+    
+    .fondo_inicio {
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/fondo_4.jpg);
+        width: 100%;
+    }
+    
+    .banner_inicio {
+        position: absolute;
+        left: 10%;
+        top: 60%;
+        right: 10%;
+        padding: 1em;
+        width: 70%;
+        text-align: center;
+        background-color: rgba(116, 114, 218, 0.4);
+        color: #fff;
+        margin: auto;
+        border-radius: 3em;
+    }
+    
+    .banner_inicio h1{
+        font-size: 10vw;
+        color: white;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+    
+    .banner_inicio p{
+        font-size: 3vw;
+        color: white;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+    
+    .intro{
+        background-color: #7472DA;
+        margin: 0px;
+        padding: 2% 5% 0%;
+    }
+    
+    .intro_cont{
+        color: white;
+        padding: 1em 10% 5em;
+    }
+    
+    .intro h1{
+        font-size: 2em;
+    }
+    
+    .intro p{
+        font-size: 1em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .noticia{
+        background-color: white;
+        display: block;
+    }
+    
+    .contenido {
+        padding: 2em;
+    }
+    
+    .contenido h1 {
+        color: #7472DA;
+        font-size: 1.5em;
+    }
+    
+    .contenido p {
+        padding: 2em;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    
+    .xever_ds {
+        display: block;
+        margin: -25% 0% 0% 0%;
+        width: 100%;
+        height: 50%;
+    }
+    
+    #titulo_jugadores {
+        color: white;
+        font-size: 3em;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+    
+    #intro_jugadores {
+        color: white;
+        font-size: 1.2em;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+        padding: 1% 10% 0%;
+    }
+    
+    .video {
+        padding: 3em 3em 3em 5em;
+    }
+    
+    .tarjeta {
+        background-color: rgba(230, 230, 230, 0.6);
+        margin-bottom: 2em;
+        width: 90%;
+        border-radius: 2em;
+    }
+    
+    .tarjeta a{
+        text-decoration: none;
+    }
+    
+    .tarjeta-content {
+        padding: 1.5em;
+    }
+    
+    .tarjeta-content h2 {
+        margin-top: -1em;
+        margin-bottom: -0.5em;
+        font-weight: normal;
+        color: #7472DA;
+        text-align: center;
+    }
+    
+    .tarjeta-content p {
+        font-size: 95%;
+        text-align: center;
+    }
+    
+    .thumbnail {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position: relative;
+    }
+    
+    .thumbnail .esquinas {
+        border-radius: 30px;
+    }
+    
+    img {
+        display: block;
+        border: 0;  
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .perfiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        padding: 7%;
+    }
+    
+    #fondo_animado {
+        background: linear-gradient(-45deg, #DD8343, #7472DA, white);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    footer {
+        margin-top: auto;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 5% 5% 5% 5%;
+        justify-content: center;
+    }
+
+    #pie .fa {
+        padding: 1em;
+        font-size: 4vw;
+        width: 1em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1em 1em;
+        border-radius: 50%;
+    }
+
+    #pie_form .fa {
+        padding: 1em;
+        font-size: 4vw;
+        width: 3em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1em 1em;
+        border-radius: 50%;
+    }
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        font-size: 2em;
+    }
+    
+    .fa-twitch {
+        background: #6441a5;
+        color: white;
+    }
+    
+    .fa-instagram {
+        background: #515BD4 ;
+        color: white;
+    }
+    
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+    
+    .pie_2 {
+        margin-top: auto;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        margin: 5% 20% 0% 25%;
+    }
+}
